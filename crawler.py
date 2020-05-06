@@ -1,3 +1,8 @@
+# A simple script that crawls a random wikipedia page. 
+# Prints the name of the wikipedia entry, the date when it was last modified
+# and the categories the page belongs to.
+############################################################################
+
 import requests
 from bs4 import BeautifulSoup
 
