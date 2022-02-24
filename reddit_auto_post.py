@@ -57,7 +57,6 @@ post_count = 0
 for subreddit in subreddits:
     post_count += 1
     try:
-        # reddit.subreddit(subreddit).submit(title=title, selftext=text, send_replies=False)
         reddit.subreddit(subreddit).submit_gallery(title=title, images=pics, send_replies=False) # submission
         print("Posted to", subreddit, "posts num:", post_count, 'of', len(subreddits))  # prints info
 
@@ -81,7 +80,6 @@ for subreddit in subreddits:
         time.sleep(wait*60)
         # try again after sleeping
         reddit.subreddit(subreddit).submit_gallery(title=title, images=pics, send_replies=False) # submission
-        # reddit.subreddit(subreddit).submit(title=title, selftext=text, send_replies=False)
         print("Posted to", subreddit, "posts num:", post_count, 'of', len(subreddits))  # prints info
 
 
